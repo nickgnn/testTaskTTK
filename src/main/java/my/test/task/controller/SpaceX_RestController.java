@@ -55,5 +55,8 @@ public class SpaceX_RestController {
                 .stream()
                 .map(launch_year -> (String) launch_year.get("launch_year"))
                 .collect(Collectors.toCollection(ArrayList::new));
+
+        missionNames.forEach(System.out::println);
+        launchYears.forEach(System.out::println);
     }
 }
